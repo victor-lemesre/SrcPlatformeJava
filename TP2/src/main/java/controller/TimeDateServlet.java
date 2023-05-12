@@ -9,7 +9,9 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
-
+/**
+ * Exercice 1
+ * */
 public class TimeDateServlet extends HttpServlet{
 
     private static final long serialVersionUID = -6560473323925863865L;

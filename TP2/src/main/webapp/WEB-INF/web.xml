@@ -23,12 +23,29 @@
 		<url-pattern>/TimeDate</url-pattern>
 	</servlet-mapping>
 
-<servlet>
-        <servlet-name>SchoolServlet</servlet-name>
-        <servlet-class>controller.SchoolServlet</servlet-class>
-    </servlet>
-    <servlet-mapping>
-        <servlet-name>SchoolServlet</servlet-name>
-        <url-pattern>/school</url-pattern>
-    </servlet-mapping>
+	<servlet>
+		<servlet-name>SchoolServlet</servlet-name>
+		<servlet-class>controller.SchoolServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>SchoolServlet</servlet-name>
+		<url-pattern>/school</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>BlogServlet</servlet-name>
+		<servlet-class>controller.BlogServlet</servlet-class>
+		<init-param>
+			<param-name>login</param-name>
+			<param-value>Hello</param-value>
+		</init-param>
+		<init-param>
+			<param-name>mdp</param-name>
+			<param-value>hello</param-value>
+		</init-param>
+	</servlet>
+	<servlet-mapping>
+	<servlet-name>BlogServlet</servlet-name>
+	<url-pattern>/blog</url-pattern>
+	</servlet-mapping>
 </web-app>
