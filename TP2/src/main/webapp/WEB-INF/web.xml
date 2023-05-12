@@ -15,6 +15,24 @@
 
 
 	<servlet>
+		<servlet-name>calculateServlet</servlet-name>
+		<servlet-class>controller.calculateServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>calculateServlet</servlet-name>
+		<url-pattern>/calculate</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>tempConverterServlet</servlet-name>
+		<servlet-class>controller.tempConverterServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>tempConverterServlet</servlet-name>
+		<url-pattern>/temperature</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
 		<servlet-name>TimeDateServlet</servlet-name>
 		<servlet-class>controller.TimeDateServlet</servlet-class>
 	</servlet>
@@ -32,6 +50,7 @@
 		<url-pattern>/school</url-pattern>
 	</servlet-mapping>
 
+
 	<servlet>
 		<servlet-name>BlogServlet</servlet-name>
 		<servlet-class>controller.BlogServlet</servlet-class>
@@ -48,4 +67,5 @@
 	<servlet-name>BlogServlet</servlet-name>
 	<url-pattern>/blog</url-pattern>
 	</servlet-mapping>
+
 </web-app>
