@@ -20,6 +20,7 @@ public class calculateServlet extends HttpServlet {
 	@Override
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
 		
+	  
 		// Get the values of the input parameters from the form
 		double num1 = Double.parseDouble(request.getParameter("num1"));
 		double num2 = Double.parseDouble(request.getParameter("num2"));

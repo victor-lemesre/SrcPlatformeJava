@@ -22,7 +22,7 @@
 		<servlet-name>calculateServlet</servlet-name>
 		<url-pattern>/calculate</url-pattern>
 	</servlet-mapping>
-	
+
 	<servlet>
 		<servlet-name>tempConverterServlet</servlet-name>
 		<servlet-class>controller.tempConverterServlet</servlet-class>
@@ -64,8 +64,15 @@
 		</init-param>
 	</servlet>
 	<servlet-mapping>
-	<servlet-name>BlogServlet</servlet-name>
-	<url-pattern>/blog</url-pattern>
+		<servlet-name>BlogServlet</servlet-name>
+		<url-pattern>/blog</url-pattern>
 	</servlet-mapping>
-
+<servlet>
+        <servlet-name>ImageServlet</servlet-name>
+        <servlet-class>controller.ImageServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>ImageServlet</servlet-name>
+        <url-pattern>/image</url-pattern>
+    </servlet-mapping>
 </web-app>
