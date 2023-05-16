@@ -5,26 +5,15 @@
 <title>Insert title here</title>
 </head>
 <body>
-    <!--  <form action="image" method="post" enctype="multipart/form-data">
-        <label for="uname"><b>Select File</b></label>
-        <button type="submit" value="Select File" name="select">
-            Select Image</button>
-        <br> <br> <br> <br> <br>
-        <button type="submit" value="Upload File" name="upload">Upload</button>
+<!-- Enctype permettant d'envoyer des fichiers vers le serveur -->
+	<form action="image" method="post" enctype="multipart/form-data">
+		<label for="imageFile"><b>Select File</b></label> 
+		<!-- Ouvre l'explorateur de fichier pour récupérer le nom de l'image -->
+		<input type="file"
+			name="imageFile"> <br> <br>
+			<!-- Button permettant d'executer la méthode post du servlet -->
+		<button type="submit" value="Upload">Upload</button>
+	</form>
 
-    </form>
-    <form action="ImageServlet" method="post" enctype="multipart/form-data">
-    <input type="file" name="imageFile">
-    <input type="submit" value="Upload">
-  </form>
-    -->
-    
-       <form action="image" method="post" enctype="multipart/form-data">
-        <label for="imageFile"><b>Select File</b></label>
-        
-        <input type="file" name="imageFile">
-        <br><br>
-        <button type="submit" value="Upload">Upload</button>
-    </form>
 </body>
 </html>
