@@ -92,6 +92,7 @@
 		<servlet-name>BlogServlet</servlet-name>
 		<url-pattern>/blog</url-pattern>
 	</servlet-mapping>
+
 	<servlet>
 		<servlet-name>ImageServlet</servlet-name>
 		<servlet-class>controller.ImageServlet</servlet-class>
@@ -100,6 +101,7 @@
 		<servlet-name>ImageServlet</servlet-name>
 		<url-pattern>/image</url-pattern>
 	</servlet-mapping>
+
 	<filter>
 		<filter-name>AuthFilterA</filter-name>
 		<filter-class>controller.authenticationVersionAServlet</filter-class>
@@ -119,4 +121,26 @@
 		<url-pattern>/VersionBLoginpage1</url-pattern>
 		<url-pattern>/VersionBLoginpage2</url-pattern>
 	</filter-mapping>
+
+
+	<servlet>
+		<servlet-name>ForcePageOneServlet</servlet-name>
+		<servlet-class>controller.ForcePageOneServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForcePageOneServlet</servlet-name>
+		<url-pattern>/pageone</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
+		<servlet-name>ForcePageTwoServlet</servlet-name>
+		<servlet-class>controller.ForcePageTwoServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>ForcePageTwoServlet</servlet-name>
+		<url-pattern>/pagetwo</url-pattern>
+	</servlet-mapping>
+
+
+
 </web-app>

@@ -25,3 +25,4 @@ replay_pid*
 
 #excpetion file
 !mysql-connector-j-8.0.32.jar
+/build/
