@@ -5,13 +5,18 @@ import java.io.IOException;
 import javax.servlet.Filter;
 import javax.servlet.FilterChain;
 import javax.servlet.FilterConfig;
-import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletContext;
 import javax.servlet.ServletException;
 import javax.servlet.ServletRequest;
 import javax.servlet.ServletResponse;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+
+/**
+ * 
+ * Exercice 8
+ *
+ */
 
 public class authenticationVersionAServlet implements Filter {
 
@@ -32,11 +37,11 @@ public class authenticationVersionAServlet implements Filter {
 		String url = (String) request.getSession().getAttribute("originalURL");
 
 		if (url != null) {
-			//chain.doFilter(request, response);
+			// chain.doFilter(request, response);
 			String pageName = getPageNameFromUrl(url) + ".html";
 			request.getSession().invalidate();
-			response.sendRedirect(request.getContextPath() + "/"+pageName);
-			//response.sendRedirect(request.getContextPath() + "/Accueil.html");
+			response.sendRedirect(request.getContextPath() + "/" + pageName);
+			// response.sendRedirect(request.getContextPath() + "/Accueil.html");
 		} else {
 			request.getSession().setAttribute("originalURL", request.getRequestURL().toString());
 			response.sendRedirect(request.getContextPath() + "/login.html");

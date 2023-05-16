@@ -9,6 +9,11 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * 
+ * Exercice 8
+ *
+ */
 public class loginServlet extends HttpServlet {
 
 	private String configMdp;

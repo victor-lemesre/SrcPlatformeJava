@@ -9,18 +9,22 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
+/**
+ * 
+ * Exercice 5
+ *
+ */
 public class calculateServlet extends HttpServlet {
-	
+
 	@Override
-    protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
-        RequestDispatcher dispatcher = req.getRequestDispatcher("calculator.html");
-        dispatcher.forward(req, resp);
-    }
-	
+	protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+		RequestDispatcher dispatcher = req.getRequestDispatcher("calculator.html");
+		dispatcher.forward(req, resp);
+	}
+
 	@Override
 	public void doPost(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-		
-	  
+
 		// Get the values of the input parameters from the form
 		double num1 = Double.parseDouble(request.getParameter("num1"));
 		double num2 = Double.parseDouble(request.getParameter("num2"));

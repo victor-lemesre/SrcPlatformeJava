@@ -3,6 +3,11 @@ package business;
 import DAO.GradeDAO;
 import DAO.GradeDAOImpl;
 
+/**
+ * 
+ * Exercice 6
+ *
+ */
 public class gradeBusinessImpl implements gradeBusiness {
 
 	private GradeDAO grade;
