@@ -16,6 +16,15 @@
 
 
 	<servlet>
+		<servlet-name>registrationServlet</servlet-name>
+		<servlet-class>exercice6.registrationServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>registrationServlet</servlet-name>
+		<url-pattern>/registration</url-pattern>
+	</servlet-mapping>
+
+	<servlet>
 		<servlet-name>TableServlet</servlet-name>
 		<servlet-class>exercice1.TableServlet</servlet-class>
 	</servlet>
