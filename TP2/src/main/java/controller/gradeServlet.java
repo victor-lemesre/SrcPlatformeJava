@@ -12,6 +12,11 @@ import javax.servlet.http.HttpServletResponse;
 import business.gradeBusiness;
 import business.gradeBusinessImpl;
 
+/**
+ * 
+ * Exercice 6
+ *
+ */
 public class gradeServlet extends HttpServlet {
 
 	private gradeBusiness grade;

@@ -1,5 +1,10 @@
 package DAO;
 
+/**
+ * 
+ * Exercice 6
+ *
+ */
 public interface GradeDAO {
 
 	public Double getMean();
