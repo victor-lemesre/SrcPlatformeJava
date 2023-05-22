@@ -1,4 +1,4 @@
-package exercice1;
+package exercice2;
 
 import java.io.IOException;
 import java.util.ArrayList;
@@ -10,7 +10,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 
-public class TableServlet extends HttpServlet {
+public class SquareServlet extends HttpServlet {
 
     @Override
     public void init() throws ServletException {
@@ -21,16 +21,15 @@ public class TableServlet extends HttpServlet {
     @Override
     protected void doGet(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
 
-        List<String> HelloList = new ArrayList<String>();
-        for(int i = 0 ; i < 20; i++)
-        {
-            HelloList.add("Hello");
+        List<Integer> List = new ArrayList<Integer>();
+        for (int i = 0; i < 10; i++) {
+            List.add(i*1);
         }
+
+        req.setAttribute("LISTE", List);
         
-        req.setAttribute("LISTE", HelloList);
-        RequestDispatcher dispatcher = req.getRequestDispatcher("table.jsp");
+        RequestDispatcher dispatcher = req.getRequestDispatcher("square.jsp");
         dispatcher.forward(req, resp);
-        
-       
+
     }
 }

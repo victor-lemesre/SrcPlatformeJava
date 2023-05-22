@@ -19,5 +19,22 @@
         <servlet-name>TableServlet</servlet-name>
         <url-pattern>/table</url-pattern>
     </servlet-mapping>
+    
+    <servlet>
+        <servlet-name>SquareServlet</servlet-name>
+        <servlet-class>exercice2.SquareServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>SquareServlet</servlet-name>
+        <url-pattern>/square</url-pattern>
+    </servlet-mapping>
   
+  <servlet>
+        <servlet-name>DrawServlet</servlet-name>
+        <servlet-class>exercice4.DrawServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DrawServlet</servlet-name>
+        <url-pattern>/draw</url-pattern>
+    </servlet-mapping>
 </web-app>
