@@ -23,14 +23,6 @@
 		<servlet-name>registrationServlet</servlet-name>
 		<url-pattern>/registration</url-pattern>
 	</servlet-mapping>
-	<servlet>
-		<servlet-name>headerServlet</servlet-name>
-		<servlet-class>exercice3.headerServlet</servlet-class>
-	</servlet>
-	<servlet-mapping>
-		<servlet-name>headerServlet</servlet-name>
-		<url-pattern>/header</url-pattern>
-	</servlet-mapping>
 
 	<servlet>
 		<servlet-name>TableServlet</servlet-name>
