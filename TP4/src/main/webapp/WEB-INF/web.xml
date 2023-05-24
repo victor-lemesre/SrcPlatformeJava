@@ -11,6 +11,15 @@
   </welcome-file-list>
   
   <servlet>
+        <servlet-name>basketServlet</servlet-name>
+        <servlet-class>exercice2.basketServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>basketServlet</servlet-name>
+        <url-pattern>/basket</url-pattern>
+    </servlet-mapping>
+  
+  <servlet>
         <servlet-name>SquareServlet</servlet-name>
         <servlet-class>exercice1.SquareServlet</servlet-class>
     </servlet>

@@ -9,7 +9,5 @@
 	</classpathentry>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.web.container"/>
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
-	<classpathentry kind="lib" path="C:/Users/jesie/Documents/Cours/Polytech Tours/S8/Architecture/jakarta.servlet.jsp.jstl-1.2.6.jar"/>
-	<classpathentry kind="lib" path="C:/Users/jesie/Documents/Cours/Polytech Tours/S8/Architecture/jakarta.servlet.jsp.jstl-api-1.2.7.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
