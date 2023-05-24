@@ -11,5 +11,7 @@
 	<classpathentry kind="con" path="org.eclipse.jst.j2ee.internal.module.container"/>
 	<classpathentry kind="lib" path="C:/Users/jesie/Documents/Cours/Polytech Tours/S8/Architecture/jakarta.servlet.jsp.jstl-1.2.6.jar"/>
 	<classpathentry kind="lib" path="C:/Users/jesie/Documents/Cours/Polytech Tours/S8/Architecture/jakarta.servlet.jsp.jstl-api-1.2.7.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jesie/Documents/Cours/Polytech Tours/S8/Architecture/JEE/wildfly-26.1.3.Final/modules/system/layers/base/javax/persistence/api/main/jakarta.persistence-api-2.2.3.jar"/>
+	<classpathentry kind="lib" path="C:/Users/jesie/Documents/Cours/Polytech Tours/S8/Architecture/JEE/wildfly-26.1.3.Final/modules/system/layers/base/javax/ejb/api/main/jboss-ejb-api_3.2_spec-2.0.0.Final.jar"/>
 	<classpathentry kind="output" path="build/classes"/>
 </classpath>
